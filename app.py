@@ -3,7 +3,8 @@ from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassific
 import torch
 
 # Load model and tokenizer
-model_path = "models\imdb-distilbert"  # Path to your local model folder
+model_path = "models/imdb-distilbert"
+  # Path to your local model folder
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_path)
 model = DistilBertForSequenceClassification.from_pretrained(model_path)
 model.eval()
